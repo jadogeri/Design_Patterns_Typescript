@@ -9,7 +9,9 @@
     "singleton": "nodemon src/design-patterns/creational/singleton/SingletonRunner",
     "factory": "nodemon src/design-patterns/creational/factory/FactoryRunner",
     "builder": "nodemon src/design-patterns/creational/builder/BuilderRunner",
-    "adapter": "nodemon src/design-patterns/creational/adapter/AdapterRunner"
+    "adapter": "nodemon src/design-patterns/structural/adapter/AdapterRunner",
+    "decorator": "nodemon src/design-patterns/structural/decorator/DecoratorRunner"
+
 
 
 
