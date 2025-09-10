@@ -1,0 +1,23 @@
+{
+  "name": "design_patterns_typescript",
+  "version": "1.0.0",
+  "description": "Design Patterns in Typescript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadogeri/Design_Patterns_Typescript.git"
+  },
+  "keywords": [
+    "design-patterns",
+    "typescript"
+  ],
+  "author": "Joseph Adogeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jadogeri/Design_Patterns_Typescript/issues"
+  },
+  "homepage": "https://github.com/jadogeri/Design_Patterns_Typescript#readme"
+}
