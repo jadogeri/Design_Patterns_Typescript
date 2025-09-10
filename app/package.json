@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "singleton": "nodemon src/design-patterns/creational/singleton/SingletonRunner",
     "factory": "nodemon src/design-patterns/creational/factory/FactoryRunner",
-    "builder": "nodemon src/design-patterns/creational/builder/BuilderRunner"
+    "builder": "nodemon src/design-patterns/creational/builder/BuilderRunner",
+    "adapter": "nodemon src/design-patterns/creational/adapter/AdapterRunner"
+
 
 
   },
