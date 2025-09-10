@@ -11,12 +11,10 @@
     "builder": "nodemon src/design-patterns/creational/builder/BuilderRunner",
     "adapter": "nodemon src/design-patterns/structural/adapter/AdapterRunner",
     "decorator": "nodemon src/design-patterns/structural/decorator/DecoratorRunner",
-    "facade": "nodemon src/design-patterns/structural/facade/FacadeRunner"
-
-
-
-
-
+    "facade": "nodemon src/design-patterns/structural/facade/FacadeRunner",
+    "observer": "nodemon src/design-patterns/behavioral/observer/ObserverRunner",
+    "strategy": "nodemon src/design-patterns/behavioral/strategy/StrategyRunner",
+    "command": "nodemon src/design-patterns/behavioral/command/CommandRunner"
   },
   "repository": {
     "type": "git",
