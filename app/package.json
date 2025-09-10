@@ -6,7 +6,9 @@
   "scripts": {
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "singleton": "nodemon src/design-patterns/creational/singleton/SingletonRunner"
+    "singleton": "nodemon src/design-patterns/creational/singleton/SingletonRunner",
+    "factory": "nodemon src/design-patterns/creational/factory/FactoryRunner"
+
   },
   "repository": {
     "type": "git",
