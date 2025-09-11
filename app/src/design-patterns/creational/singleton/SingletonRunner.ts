@@ -6,7 +6,7 @@ import { PostgresSql } from "./PostgresSql";
 
 export class SingletonRunner {
 
-    public static main() {
+    public main() {
 
         const mysql = new MySql();
         const oracle = new Oracle();
@@ -14,21 +14,34 @@ export class SingletonRunner {
         const mongodb = new MongoDB();
 
         //create connection instance
-        const database = Connection.getInstance();
-        console.log(database.getInstance());
-        console.log(database.getInstance());
-        console.log(database.getInstance());
+        const database1 = Connection.getInstance();
+        
+        console.log(database1);
+        const database2 = Connection.getInstance();
+        console.log(database2);
 
-        //if no database is provided, application uses memory
-        console.log(database.connectDatabase());
 
-        database.registerDatabase(mysql);
-        console.log(database.connectDatabase());
-        database.registerDatabase(postgresql);
-        console.log(database.connectDatabase());
-        database.registerDatabase(oracle);
-        console.log(database.connectDatabase());
-        database.registerDatabase(mongodb);
-        console.log(database.connectDatabase());
+        database1.registerDatabase(mysql);
+        console.log(database1);
+        console.log(database2);
+        console.log(database1.connectDatabase());
+        database2.registerDatabase(postgresql);
+        console.log(database1);
+        console.log(database2);
+        console.log(database1.connectDatabase());
+        database1.registerDatabase(oracle);
+        console.log(database1);
+        console.log(database2);
+        console.log(database1.connectDatabase());
+        database2.registerDatabase(mongodb);
+        console.log(database1);
+        console.log(database2);
+        console.log(database1.connectDatabase());
+        console.log(database2.connectDatabase());
+
+        //console.log(mongoooseDB.);
     }
 }
+
+const singletonRunner = new SingletonRunner();
+singletonRunner.main();
