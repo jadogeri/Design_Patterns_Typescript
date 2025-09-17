@@ -1,48 +1,30 @@
-console.log("testing runner factory");
-import { Connection } from "./Connection";
-import { MongoDB } from "./MongoDB";
-import { MySql } from "./MySql";
-import { Oracle } from "./Oracle";
-import { PostgresSql } from "./PostgresSql";
+import { Game } from "./Game";
+import { GameFactory } from "./GameFactory";
+import { NintendoFactory } from "./NintendoFactory";
+import { PlayStationFactory } from "./PlayStationFactory";
+import { XboxFactory } from "./XboxFactory";
 
-export class SingletonRunner {
+
+export class FactoryRunner {
 
     public main() {
 
-        const mysql = new MySql();
-        const oracle = new Oracle();
-        const postgresql = new PostgresSql();
-        const mongodb = new MongoDB();
+        const xboxFactory : GameFactory = new XboxFactory();
+        const xbox : Game = xboxFactory.createGame();
+        console.log(xbox.playingConsole());
 
-        //create connection instance
-        const database1 = Connection.getInstance();
-        
-        console.log(database1);
-        const database2 = Connection.getInstance();
-        console.log(database2);
+        const playStationFactory : GameFactory = new PlayStationFactory();
+        const playStation : Game = playStationFactory.createGame();
+        console.log(playStation.playingConsole());
 
+        const nintendoFactory : GameFactory = new NintendoFactory();
+        const nintendo : Game = nintendoFactory.createGame();
+        console.log(nintendo.playingConsole());
 
-        database1.registerDatabase(mysql);
-        console.log(database1);
-        console.log(database2);
-        console.log(database1.connectDatabase());
-        database2.registerDatabase(postgresql);
-        console.log(database1);
-        console.log(database2);
-        console.log(database1.connectDatabase());
-        database1.registerDatabase(oracle);
-        console.log(database1);
-        console.log(database2);
-        console.log(database1.connectDatabase());
-        database2.registerDatabase(mongodb);
-        console.log(database1);
-        console.log(database2);
-        console.log(database1.connectDatabase());
-        console.log(database2.connectDatabase());
-
-        //console.log(mongoooseDB.);
     }
 }
 
-const singletonRunner = new SingletonRunner();
-singletonRunner.main();
+console.log("testing runner factory");
+
+const factoryRunner = new FactoryRunner();
+factoryRunner.main();
