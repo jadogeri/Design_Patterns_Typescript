@@ -1,13 +1,12 @@
-package behavioral.strategy;
 
-public class Card {
-    private String name;
-    private String cardNumber;
-    private String cvv;
-    private String expiryDate;
-    private double amount;
+export class Card {
+    private name: string;
+    private cardNumber: string;
+    private cvv: string;
+    private expiryDate: string;
+    private amount: number;
 
-    public Card(String name, String cardNumber, String cvv, String expiryDate, double amount) {
+    constructor(name: string,cardNumber: string,cvv: string,expiryDate: string,amount: number) {
         this.name = name;
         this.cardNumber = cardNumber;
         this.cvv = cvv;
@@ -15,22 +14,22 @@ public class Card {
         this.amount = amount;
     }
 
-    public String getName() {
-        return name;
+    public getName() {
+        return this.name;
     }
-    public String getCardNumber() {
-        return cardNumber;
+    public getCardNumber(): string {
+        return this.cardNumber;
     }
-    public String getCvv() {
-        return cvv;
+    public getCvv(): string {
+        return this.cvv;
     }
-    public String getExpiryDate() {
-        return expiryDate;
+    public getExpiryDate(): string {
+        return this.expiryDate;
     }
-    public double getAmount() {
-        return amount;
+    public getAmount(): number {
+        return this.amount;
     }
-    public void setAmount(double amount) {
+    public setAmount(amount: number): void {
         this.amount = amount;
     }
 
