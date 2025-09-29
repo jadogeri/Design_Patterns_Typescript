@@ -1,8 +1,4 @@
-export class LegacyWriter{
+export interface LegacyPrintable{
 
-    writeDocument (): void {
-
-        console.log("Document written by LegacyPrinter")
-
-    }
+    printDocument (text: string): void ;
 }
