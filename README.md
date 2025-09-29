@@ -131,55 +131,55 @@ design-patterns
     │   │   ├── PrinterAdapter.ts
     │   │   └── AdapterRunner.ts
     │   ├── decorator
-    │   │   ├── Burger.java
-    │   │   ├── RegularBurger.java
-    │   │   ├── BurgerDecorator.java
-    │   │   ├── MayoDecorator.java
-    │   │   ├── OnionDecorator.java
-    │   │   ├── PickleDecorator.java
-    │   │   ├── CheeseDecorator.java
-    │   │   └── DecoratorRunner.java
+    │   │   ├── Burger.ts
+    │   │   ├── RegularBurger.ts
+    │   │   ├── BurgerDecorator.ts
+    │   │   ├── MayoDecorator.ts
+    │   │   ├── OnionDecorator.ts
+    │   │   ├── PickleDecorator.ts
+    │   │   ├── CheeseDecoratorconsole..ts
+    │   │   └── DecoratorRunnerconsole..ts
     │   └── facade
-    │       ├── ApplePay.java
-    │       ├── VisaCard.java
-    │       ├── DHL.java
-    │       ├── MonarchInventoryService.java
-    │       ├── PaymentService.java
-    │       ├── InventoryService.java
-    │       ├── ShippingService.java
-    │       ├── USPS.java
-    │       ├── OrderFacade.java
-    │       └── FacadeRunner.java
+    │       ├── ApplePayconsole..ts
+    │       ├── VisaCardconsole..ts
+    │       ├── DHLconsole..ts
+    │       ├── MonarchInventoryServiceconsole..ts
+    │       ├── PaymentServiceconsole..ts
+    │       ├── InventoryServiceconsole..ts
+    │       ├── ShippingServiceconsole..ts
+    │       ├── USPSconsole..ts
+    │       ├── OrderFacadeconsole..ts
+    │       └── FacadeRunnerconsole..ts
     └── behavioral
         ├── strategy
-        │   ├── Card.java
-        │   ├── CreditCardStrategy.java
-        │   ├── DebitCardStrategy.java
-        │   ├── PaypalStrategy.java
-        │   ├── PaymentStrategy.java
-        │   ├── InsufficientFundsException.java
-        │   ├── ShoppingCart.java
-        │   └── StrategyRunner.java
+        │   ├── Cardconsole..ts
+        │   ├── CreditCardStrategyconsole..ts
+        │   ├── DebitCardStrategyconsole..ts
+        │   ├── PaypalStrategyconsole..ts
+        │   ├── PaymentStrategyconsole..ts
+        │   ├── InsufficientFundsExceptionconsole..ts
+        │   ├── ShoppingCartconsole..ts
+        │   └── StrategyRunnerconsole..ts
         ├── observer
-        │   ├── Subject.java
-        │   ├── Observer.java
-        │   ├── ChatRoom.java
-        │   ├── Message.java
-        │   ├── User.java
-        │   └── ObserverRunner.java
+        │   ├── Subjectconsole..ts
+        │   ├── Observerconsole..ts
+        │   ├── ChatRoomconsole..ts
+        │   ├── Messageconsole..ts
+        │   ├── Userconsole..ts
+        │   └── ObserverRunnerconsole..ts
         └── command
-            ├── Command.java
-            ├── Device.java
-            ├── Radio.java
-            ├── Light.java
-            ├── Television.java
-            ├── Light.java
-            ├── TurnOnCommand.java
-            ├── TurnOffCommand.java
-            ├── AdjustvolumeCommand.java
-            ├── ChangeChannelCommand.java
-            ├── RemoteControl.java
-            └── CommandRunner.java
+            ├── Commandconsole..ts
+            ├── Deviceconsole..ts
+            ├── Radioconsole..ts
+            ├── Lightconsole..ts
+            ├── Televisionconsole..ts
+            ├── Lightconsole..ts
+            ├── TurnOnCommandconsole..ts
+            ├── TurnOffCommandconsole..ts
+            ├── AdjustvolumeCommandconsole..ts
+            ├── ChangeChannelCommandconsole..ts
+            ├── RemoteControlconsole..ts
+            └── CommandRunnerconsole..ts
 
 ```
 Implementation Details: 
@@ -260,7 +260,7 @@ Behavioral Patterns:
 5 To run any of the design patterns (using command pattern for illustration)
   Navigate to `behavioral` --> `command` --> `CommandRunner` .
 
-  Note!! each pattern has a file ending in *.Runner.java to run the app.
+  Note!! each pattern has a file ending in *.Runnerconsole..ts to run the app.
 
 6 Press play button to start application.
 
