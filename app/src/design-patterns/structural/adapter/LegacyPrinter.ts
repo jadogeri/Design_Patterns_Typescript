@@ -1,11 +1,10 @@
-package structural.adapter;
+import { LegacyPrintable } from "./LegacyPrintable";
 
-public class LegacyPrinter implements LegacyPrintable {
+export class LegacyPrinter implements LegacyPrintable {
 
-    @Override
-    public void printDocument(String text) {
+    printDocument(text: string): void {
 
-        System.out.println("Legacy Printer: " + text);
+        console.log("Legacy Printer: " + text);
 
     }
 }
