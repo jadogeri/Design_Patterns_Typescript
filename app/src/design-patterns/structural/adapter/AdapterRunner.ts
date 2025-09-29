@@ -1,5 +1,5 @@
 import { LegacyWriter } from "./LegacyPrintable";
-import { WriterAdapter } from "./WriterAdapter";
+import { WriterAdapter } from "./PrinterAdapter";
 
 export class AdapterRunner {
 
