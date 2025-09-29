@@ -137,49 +137,49 @@ design-patterns
     │   │   ├── MayoDecorator.ts
     │   │   ├── OnionDecorator.ts
     │   │   ├── PickleDecorator.ts
-    │   │   ├── CheeseDecoratorconsole..ts
-    │   │   └── DecoratorRunnerconsole..ts
+    │   │   ├── CheeseDecoratorconsole.ts
+    │   │   └── DecoratorRunnerconsole.ts
     │   └── facade
-    │       ├── ApplePayconsole..ts
-    │       ├── VisaCardconsole..ts
-    │       ├── DHLconsole..ts
-    │       ├── MonarchInventoryServiceconsole..ts
-    │       ├── PaymentServiceconsole..ts
-    │       ├── InventoryServiceconsole..ts
-    │       ├── ShippingServiceconsole..ts
-    │       ├── USPSconsole..ts
-    │       ├── OrderFacadeconsole..ts
-    │       └── FacadeRunnerconsole..ts
+    │       ├── ApplePayconsole.ts
+    │       ├── VisaCardconsole.ts
+    │       ├── DHLconsole.ts
+    │       ├── MonarchInventoryServiceconsole.ts
+    │       ├── PaymentServiceconsole.ts
+    │       ├── InventoryServiceconsole.ts
+    │       ├── ShippingServiceconsole.ts
+    │       ├── USPSconsole.ts
+    │       ├── OrderFacadeconsole.ts
+    │       └── FacadeRunnerconsole.ts
     └── behavioral
         ├── strategy
-        │   ├── Cardconsole..ts
-        │   ├── CreditCardStrategyconsole..ts
-        │   ├── DebitCardStrategyconsole..ts
-        │   ├── PaypalStrategyconsole..ts
-        │   ├── PaymentStrategyconsole..ts
-        │   ├── InsufficientFundsExceptionconsole..ts
-        │   ├── ShoppingCartconsole..ts
-        │   └── StrategyRunnerconsole..ts
+        │   ├── Cardconsole.ts
+        │   ├── CreditCardStrategyconsole.ts
+        │   ├── DebitCardStrategyconsole.ts
+        │   ├── PaypalStrategyconsole.ts
+        │   ├── PaymentStrategyconsole.ts
+        │   ├── InsufficientFundsExceptionconsole.ts
+        │   ├── ShoppingCartconsole.ts
+        │   └── StrategyRunnerconsole.ts
         ├── observer
-        │   ├── Subjectconsole..ts
-        │   ├── Observerconsole..ts
-        │   ├── ChatRoomconsole..ts
-        │   ├── Messageconsole..ts
-        │   ├── Userconsole..ts
-        │   └── ObserverRunnerconsole..ts
+        │   ├── Subjectconsole.ts
+        │   ├── Observerconsole.ts
+        │   ├── ChatRoomconsole.ts
+        │   ├── Messageconsole.ts
+        │   ├── Userconsole.ts
+        │   └── ObserverRunnerconsole.ts
         └── command
-            ├── Commandconsole..ts
-            ├── Deviceconsole..ts
-            ├── Radioconsole..ts
-            ├── Lightconsole..ts
-            ├── Televisionconsole..ts
-            ├── Lightconsole..ts
-            ├── TurnOnCommandconsole..ts
-            ├── TurnOffCommandconsole..ts
-            ├── AdjustvolumeCommandconsole..ts
-            ├── ChangeChannelCommandconsole..ts
-            ├── RemoteControlconsole..ts
-            └── CommandRunnerconsole..ts
+            ├── Commandconsole.ts
+            ├── Deviceconsole.ts
+            ├── Radioconsole.ts
+            ├── Lightconsole.ts
+            ├── Televisionconsole.ts
+            ├── Lightconsole.ts
+            ├── TurnOnCommandconsole.ts
+            ├── TurnOffCommandconsole.ts
+            ├── AdjustvolumeCommandconsole.ts
+            ├── ChangeChannelCommandconsole.ts
+            ├── RemoteControlconsole.ts
+            └── CommandRunnerconsole.ts
 
 ```
 Implementation Details: 
@@ -260,7 +260,7 @@ Behavioral Patterns:
 5 To run any of the design patterns (using command pattern for illustration)
   Navigate to `behavioral` --> `command` --> `CommandRunner` .
 
-  Note!! each pattern has a file ending in *.Runnerconsole..ts to run the app.
+  Note!! each pattern has a file ending in *.Runnerconsole.ts to run the app.
 
 6 Press play button to start application.
 
