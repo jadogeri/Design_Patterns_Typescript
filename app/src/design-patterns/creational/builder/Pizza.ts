@@ -1,79 +1,106 @@
-package creational.builder;
-public class Pizza {
-    private String dough;
-    private String sauce;
-    private String cheese;
-    private boolean pepperoni;
-    private boolean mushrooms;
-    private boolean onions;
+
+export namespace Pizza{
+    class Pizza {
+    private dough: string;
+    private sauce: string;
+    private cheese: string;
+    private pepperoni: boolean;
+    private mushrooms: boolean;
+    private onions: boolean;
 
     // Private constructor to enforce creation through the Builder
-    private Pizza(PizzaBuilder builder) {
-        this.dough = builder.dough;
-        this.sauce = builder.sauce;
-        this.cheese = builder.cheese;
-        this.pepperoni = builder.pepperoni;
-        this.mushrooms = builder.mushrooms;
-        this.onions = builder.onions;
+    constructor(builder: Pizza.PizzaBuilder) {
+        this.dough = builder.getDough();
+        this.sauce = builder.getSauce();
+        this.cheese = builder.getCheese();
+        this.pepperoni = builder.getPepperoni();
+        this.mushrooms = builder.getMushrooms();
+        this.onions = builder.getOnions();
     }
 
-    public String getDough() {
-        return dough;
+    public getDough(): string {
+        return this.dough;
     }
 
-    public String getSauce() {
-        return sauce;
+    public getSauce(): string {
+        return this.sauce;
     }
 
-    public String getCheese() {
-        return cheese;
+    public getCheese(): string {
+        return this.cheese;
     }
 
-    public boolean getPepperoni() {
-        return pepperoni;
+    public getPepperoni(): boolean {
+        return this.pepperoni;
     }
 
-    public boolean getMushrooms() {
-        return mushrooms;
+    public getMushrooms(): boolean {
+        return this.mushrooms;
     }
 
-    public boolean getOnions() {
-        return onions;
+    public getOnions(): boolean {
+        return this.onions;
     }
+     
+}
+    export class PizzaBuilder{
+        private dough: string;
+        private sauce: string;
+        private cheese: string;
+        private pepperoni: boolean = false; // Optional, with default;
+        private mushrooms: boolean = false; // Optional, with default;
+        private onions: boolean = false; // Optional, with default;
 
-    public static class PizzaBuilder {
-        private String dough;
-        private String sauce;
-        private String cheese;
-        private boolean pepperoni = false; // Optional, with default
-        private boolean mushrooms = false; // Optional, with default
-        private boolean onions = false;   // Optional, with default
+        public getDough(): string {
+            return this.dough;
+        }
+
+        public getSauce(): string {
+            return this.sauce;
+        }
+
+        public getCheese(): string {
+            return this.cheese;
+        }
+
+        public getPepperoni(): boolean {
+            return this.pepperoni;
+        }
+
+        public getMushrooms(): boolean {
+            return this.mushrooms;
+        }
+
+        public getOnions(): boolean {
+            return this.onions;
+        }
+
 
         // Constructor for mandatory parameters
-        public PizzaBuilder(String dough, String sauce, String cheese) {
+        constructor(dough: string, sauce: string, cheese: string) {
             this.dough = dough;
             this.sauce = sauce;
             this.cheese = cheese;
         }
 
         // Methods for setting optional parameters, returning the builder for chaining
-        public PizzaBuilder addPepperoni() {
+        public addPepperoni(): PizzaBuilder{
             this.pepperoni = true;
             return this;
         }
 
-        public PizzaBuilder addMushrooms() {
+        public addMushrooms(): PizzaBuilder {
             this.mushrooms = true;
             return this;
         }
 
-        public PizzaBuilder addOnions() {
+        public addOnions(): PizzaBuilder {
             this.onions = true;
             return this;
         }
 
         // Build method to create the final Pizza object
-        public Pizza build() {
+        public build(): Pizza {
             return new Pizza(this);
         }
     }

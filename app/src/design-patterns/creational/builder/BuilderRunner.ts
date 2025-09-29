@@ -1,21 +1,22 @@
-package creational.builder;
+import { Pizza } from "./Pizza";
 
-public class BuilderRunner
+
+class BuilderRunner
 {
-    public static void main(String[] args)
+    public main()
     {
-        System.out.println("Pizza Builder");
+        console.log("Pizza Builder");
         // Creating a pizza with mandatory and some optional toppings
-        Pizza deluxePizza = new Pizza.PizzaBuilder("thin crust", "tomato", "mozzarella")
+        const deluxePizza = new Pizza.PizzaBuilder("thin crust", "tomato", "mozzarella")
                 .addPepperoni()
                 .addMushrooms()
                 .build();
 
         // Creating a simple cheese pizza
-        Pizza cheesePizza = new Pizza.PizzaBuilder("thick crust", "marinara", "cheddar")
+        const cheesePizza = new Pizza.PizzaBuilder("thick crust", "marinara", "cheddar")
                 .build();
 
-        System.out.println("Deluxe Pizza Builder : \n" +
+        console.log("Deluxe Pizza Builder : \n" +
                 "cheese: " + deluxePizza.getCheese() + " \n" +
                 "mushrooms: " + deluxePizza.getMushrooms() + " \n");
 
@@ -24,3 +25,6 @@ public class BuilderRunner
 
 
 console.log("testing runner builder")
+
+const builderRunner = new BuilderRunner();
+builderRunner.main();
