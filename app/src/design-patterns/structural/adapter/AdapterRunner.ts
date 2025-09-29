@@ -1,15 +1,21 @@
-import { LegacyWriter } from "./LegacyPrintable";
-import { WriterAdapter } from "./PrinterAdapter";
+import { LegacyPrinter } from "./LegacyPrinter";
+import { PrinterAdapter } from "./PrinterAdapter";
 
-export class AdapterRunner {
+class AdapterRunner {
 
     public main() {
 
-        const legacyWriter = new LegacyWriter();
-        const writerAdapter = new WriterAdapter(legacyWriter);
-        writerAdapter.write();
 
+        // Using the old printer directly (legacy client)
+        const legacyClientPrinter : LegacyPrinter = new LegacyPrinter();
+        legacyClientPrinter.printDocument("Printing from legacy client.");
 
+        // Using the new printer interface with the adapter (modern client)
+        const legacyPrinterInstance : LegacyPrinter = new LegacyPrinter();
+        const modernClientPrinter : PrinterAdapter = new PrinterAdapter(legacyPrinterInstance);
+
+        modernClientPrinter.print("Printing from modern client using adapter.");
+        modernClientPrinter.printPage("Printing page 1 using adapter.");
     }
 }
 
