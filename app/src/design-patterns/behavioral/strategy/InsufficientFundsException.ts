@@ -1,8 +1,7 @@
-package behavioral.strategy;
 
-public class InsufficientFundsException extends Exception {
+export class InsufficientFundsException extends Error {
 
-    public InsufficientFundsException(String message) {
+    constructor(message: string) {
         super(message);
     }
 }

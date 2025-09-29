@@ -1,51 +1,49 @@
-package behavioral.strategy;
+import { PaymentStrategy } from "./PaymentStrategy";
+import { InsufficientFundsException } from "./InsufficientFundsException";
 
-public class PaypalStrategy implements PaymentStrategy {
-    private String email;
-    private String password;
-    private double amount;
+export class PaypalStrategy implements PaymentStrategy {
+    private email: string;
+    private password: string;
+    private amount: number;
 
-    public PaypalStrategy(String email, String password, double amount) {
+    constructor(email: string, password: string, amount: number) {
         this.email = email;
         this.password = password;
         this.amount = amount;
     }
 
-    public String getEmail() {
-        return email;
+    public getEmail(): string {
+        return this.email;
     }
 
-    public double getAmount() {
-        return amount;
+    public getAmount(): number {
+        return this.amount;
     }
-    public void setAmount(double amount) {
+    public setAmount(amount: number) {
         this.amount = amount;
     }
 
-    @Override
-    public void pay(double amount) throws InsufficientFundsException {
-        System.out.println("Processing Paypal payment of " + amount + " from user with email " + this.getEmail() + " .....");
+    public pay(amount: number): void{
+        console.log("Processing Paypal payment of " + amount + " from user with email " + this.getEmail() + " .....");
 
         if(amount < 0){
-            throw new IllegalArgumentException("Amount cannot be negative");
+            throw new Error("Amount cannot be negative");
         }
         if(this.getAmount() - amount < -2000){
             throw new InsufficientFundsException("Insufficient funds for withdrawal.");
         }
-        System.out.println("new total " + (this.getAmount() - amount));
+        console.log("new total " + (this.getAmount() - amount));
 
         this.setAmount(this.getAmount() - amount);
-        //System.out.println("Debit card amount is " + this.getAmount());
 
     }
 
-    @Override
-    public void addFunds(double amount) {
-        System.out.println("Processing PayPal adding funds of " + amount + " for user with email " + this.getEmail());
+    public addFunds(amount: number): void {
+        console.log("Processing PayPal adding funds of " + amount + " for user with email " + this.getEmail());
         if (amount < 0.0) {
-            throw new IllegalArgumentException("Balance cannot be negative.");
+            throw new Error("Balance cannot be negative.");
         }
-        System.out.println("new total " + (this.getAmount() + amount));
+        console.log("new total " + (this.getAmount() + amount));
 
         this.setAmount(this.getAmount() + amount);
     }

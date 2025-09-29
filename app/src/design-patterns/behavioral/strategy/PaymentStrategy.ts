@@ -1,7 +1,6 @@
-package behavioral.strategy;
 
 
-public interface PaymentStrategy {
-    void pay(double amount) throws InsufficientFundsException;
-    void addFunds(double amount);
+export interface PaymentStrategy {
+    pay(amount: number): void;
+    addFunds(amount: number): void;
 }

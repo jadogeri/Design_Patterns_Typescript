@@ -1,26 +1,25 @@
-package behavioral.strategy;
+import { PaymentStrategy } from "./PaymentStrategy";
 
-public class ShoppingCart {
-    private PaymentStrategy paymentStrategy;
+export class ShoppingCart {
+    private paymentStrategy: PaymentStrategy | null = null;
 
-    public void setPaymentStrategy(PaymentStrategy paymentStrategy) {
+    public setPaymentStrategy(paymentStrategy: PaymentStrategy ): void {
         this.paymentStrategy = paymentStrategy;
     }
 
-    public void checkout(double amount) throws InsufficientFundsException {
-        if (paymentStrategy == null) {
-            System.out.println("No payment strategy selected.");
+    public checkout(amount: number): void {
+        if (this.paymentStrategy == null) {
+            console.log("No payment strategy selected.");
             return;
         }
-        paymentStrategy.pay(amount);
+        this.paymentStrategy.pay(amount);
     }
 
-    public void increaseFunds(double amount) {
-        if (paymentStrategy == null) {
-            System.out.println("No payment strategy selected.");
+    public increaseFunds(amount: number): void {
+        if (this.paymentStrategy == null) {
+            console.log("No payment strategy selected.");
             return;
         }
-        paymentStrategy.addFunds(amount);
-
+        this.paymentStrategy.addFunds(amount);
     }
 }
