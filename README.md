@@ -102,34 +102,34 @@ design-patterns
 └── src/main/java
     ├── creational
     │   ├── singleton
-    │   │   ├── Connection.java
-    │   │   ├── DatabaseClient.java
-    │   │   ├── MySql.java
-    │   │   ├── Oracle.java
-    │   │   ├── MongoDB.java
-    │   │   ├── PostgresSql.java
-    │   │   └── SingletonRunner.java
+    │   │   ├── Connection.ts
+    │   │   ├── DatabaseClient.ts
+    │   │   ├── MySql.ts
+    │   │   ├── Oracle.ts
+    │   │   ├── MongoDB.ts
+    │   │   ├── PostgresSql.ts
+    │   │   └── SingletonRunner.ts
     │   ├── factory
-    │   │   ├── Game.java
-    │   │   ├── GameFactory.java
-    │   │   ├── PlayStation.java
-    │   │   ├── Nintendo.java
-    │   │   ├── Xbox.java
-    │   │   ├── PlayStationFactory.java
-    │   │   ├── NintendoFactory.java
-    │   │   ├── XboxFactory.java
-    │   │   └── FactoryRunner.java
+    │   │   ├── Game.ts
+    │   │   ├── GameFactory.ts
+    │   │   ├── PlayStation.ts
+    │   │   ├── Nintendo.ts
+    │   │   ├── Xbox.ts
+    │   │   ├── PlayStationFactory.ts
+    │   │   ├── NintendoFactory.ts
+    │   │   ├── XboxFactory.ts
+    │   │   └── FactoryRunner.ts
     │   └── builder
-    │       ├── Pizza.java
-    │       ├── Product.java
-    │       └── BuilderRunner.java
+    │       ├── Pizza.ts
+    │       ├── Product.ts
+    │       └── BuilderRunner.ts
     ├── structural
     │   ├── adapter
-    │   │   ├── LegacyPrintable.java
-    │   │   ├── ModernPrintable.java
-    │   │   ├── LegacyPrinter.java
-    │   │   ├── PrinterAdapter.java
-    │   │   └── AdapterRunner.java
+    │   │   ├── LegacyPrintable.ts
+    │   │   ├── ModernPrintable.ts
+    │   │   ├── LegacyPrinter.ts
+    │   │   ├── PrinterAdapter.ts
+    │   │   └── AdapterRunner.ts
     │   ├── decorator
     │   │   ├── Burger.java
     │   │   ├── RegularBurger.java
