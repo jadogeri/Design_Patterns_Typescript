@@ -1,8 +1,8 @@
-# **Design Patterns JAVA**
+# **Design Patterns TYPESCRIPT**
 
 **Version:** 1.0.0
 
-**Date:** September 28, 2025
+**Date:** September 29, 2025
 
 ---
 
@@ -16,7 +16,7 @@ This repository is for learning and implementing software design patterns concep
 
 ## Repository
 
-[https://github.com/jadogeri/Design_Patterns_Java.git](https://github.com/jadogeri/Design_Patterns_Java.git)
+[https://github.com/jadogeri/Design_Patterns_Typescript.git](https://github.com/jadogeri/Design_Patterns_Typescript.git)
 
 
 ## Screenshots
@@ -67,7 +67,7 @@ This repository is for learning and implementing software design patterns concep
 
 ### **1.1 Purpose**
 
-The purpose of this project is to learn and apply software design patterns principles in java applications.
+The purpose of this project is to learn and apply software design patterns principles in typescript applications.
 
 ### **1.2 Scope**
 
