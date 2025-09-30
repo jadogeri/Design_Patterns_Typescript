@@ -1,4 +1,4 @@
-# **Design Patterns TYPESCRIPT**
+# **Design Patterns Typescript**
 
 **Version:** 1.0.0
 
@@ -79,27 +79,28 @@ This project will allow users to :
 ### **1.3 Intended Audience**
 
 - Junior or Senior backend developers.
-- Beginners learning (Java) and design patterns in software engineering.
+- Beginners learning (Typescript) and design patterns in software engineering.
 
 ---
 
 ## **2. Technology Stack**
 
-- **Programming Languages**: Java
-- **IDE**: IntelliJ and Visual Studio Code (VSCode)
+- **Programming Languages**: Typescript
+- **IDE**: Visual Studio Code (VSCode)
 - **Plugins**: Early AI, Google AI
 - **Version Control**: Git and GitHub
 - **Code Analsis**: SonarQube
+- **Framework** NodeJS
 
 ## **3. Project Structure**
 
-A Java project can be structured to demonstrate various design pattern implementations. This involves organizing code into packages and classes that exemplify the principles and structures of different patterns. 
+A Node project can be structured to demonstrate various design pattern implementations. This involves organizing code into packages and classes that exemplify the principles and structures of different patterns. 
 Project Structure: 
 A common approach is to create a top-level package for the project, such as com.example.designpatterns. Within this, sub-packages can be created for each category of design patterns (Creational, Structural, Behavioral) and further sub-packages for individual patterns. 
 
 ```tree
-design-patterns
-└── src/main/java
+design_patterns_typescript
+└── app/src/design-patterns
     ├── creational
     │   ├── singleton
     │   │   ├── Connection.ts
@@ -231,38 +232,55 @@ Behavioral Patterns:
 
 ## **4. Installation**
 
-* [Download and install IntelliJ Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
-* [Download and install Java](https://www.oracle.com/java/technologies/downloads/)
+* [Download and install Visual Studio Code](https://code.visualstudio.com/download)
+* [Download and install NodeJS](https://nodejs.org/en/download)
+* [Download and install Typescript](https://www.typescriptlang.org/download/)
 
 ---
 
 ## **5. Usage**
 
-**Prerequisites** :installation of IntelliJ IDE and Java.
+**Prerequisites** :installation of Visual Studio Code, Node and Typescript.
 
 ### **5.1 Run Application**
 
-0 open intelliJ IDE.
+0 open Visual Studio Code then click on `Terminal` --> select `New Terminal`.
 
-1 Select option `CLONE REPOSITORY` .
+1 create directory (I created repo in my `Desktop` directory) then enter command `cd repo` to navigate into repo directory.
 
-2 Copy and paste url `https://github.com/jadogeri/Design_Patterns_Java.git` and choose location to save project then press clone.
+```bash
 
- (Note!! choose empty folder : I created folder repo)
+cd repo
+
+```
+
+2 type command `git clone https://github.com/jadogeri/Design_Patterns_Typescript.git` to clone project.
+
+```bash
+
+git clone https://github.com/jadogeri/Design_Patterns_Typescript.git
+
+```
 
 ![clone project](assets/images/cloneProject.png)
 
 
-3 Change view to Project.
+3 Type `cd Design_Patterns_Typescript` to enter project.
 
-4 Navigate to `design_patterns` --> `src` --> `main` -- `java`.
+```bash
 
-5 To run any of the design patterns (using command pattern for illustration)
-  Navigate to `behavioral` --> `command` --> `CommandRunner` .
+cd Design_Patterns_Typescript
 
-  Note!! each pattern has a file ending in *.Runnerconsole.ts to run the app.
+```
 
-6 Press play button to start application.
+4 Navigate to `app` --> `src` --> `design-patterns`.
+
+5 To run any of the design patterns (using singleton pattern for illustration)
+  Navigate to `behavioral` --> `singleton` --> `SingletonRunner` .
+
+  Note!! each pattern has a file ending in *.Runner.ts to run the app.
+
+6 type `npm run singleton` to run application.
 
 ![start application](assets/images/runApp.png)
 
