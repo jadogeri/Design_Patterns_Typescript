@@ -1,8 +1,7 @@
-package structural.facade;
+import { PaymentService } from "./PaymentService";
 
-public class VisaCard implements PaymentService {
-    @Override
-    public void processPayment(double amount) {
-        System.out.println("Visa card processing payment of " + amount);
+export class VisaCard implements PaymentService {
+    public processPayment(amount: number) {
+        console.log("Visa card processing payment of " + amount);
     }
 }
