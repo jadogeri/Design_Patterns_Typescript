@@ -5,8 +5,6 @@ import { OnionDecorator } from "./OnionDecorator";
 import { PickleDecorator } from "./PickleDecorator";
 import { RegularBurger } from "./RegularBurger";
 
-
-
 export class DecoratorRunner {
     public main() {
 
