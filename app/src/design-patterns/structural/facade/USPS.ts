@@ -1,3 +1,4 @@
+import { ShippingService } from "./ShippingService";
 
 export class USPS implements ShippingService {
     public arrangeShipping(item: string,address: string): void {
